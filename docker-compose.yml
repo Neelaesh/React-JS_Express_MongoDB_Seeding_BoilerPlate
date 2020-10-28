@@ -1,0 +1,48 @@
+version: '3'
+
+services: 
+    express:
+        build: ./express
+        ports: 
+          - 3005:80
+        volumes: 
+            - ./express:/src
+        networks: 
+            - network2
+    react:
+        build: ./reactjs
+        stdin_open: true
+        ports:
+          - 3000:3000
+        depends_on: 
+          - express
+        volumes: 
+          - ./reactjs:/src
+        networks: 
+          - network1
+    mongodb:
+        image: mongo
+        ports:
+            - 27018:27017
+        networks: 
+          - network1
+    mongo-seed:
+        build: ./mongo-seed
+        links:
+            - mongodb
+    express-mongo:
+        build: ./expressMongo
+        ports: 
+            - 3006:80
+        volumes: 
+            - ./expressMongo:/src
+        depends_on: 
+            - mongodb
+        networks: 
+          - network1
+
+networks: 
+    network1:
+      driver: bridge
+    network2:
+      driver: bridge

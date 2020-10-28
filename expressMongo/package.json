@@ -1,0 +1,19 @@
+{
+  "name": "expressmongo",
+  "version": "1.0.0",
+  "description": "Express JS and Mongo Docker Application to display Player List from MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "cors": "^2.8.5",
+    "nodemon": "^1.19.1",
+    "mongoose": "^5.6.0",
+    "mongodb": "^3.1.13",
+    "body-parser": "^1.19.0"
+  }
+}

@@ -1,0 +1,33 @@
+[
+    {
+      "name": "Leo Bebe",
+      "email": "lbebe@gmail.com",
+      "age": 40,
+      "role": "CEO"
+    },
+    {
+      "name": "Henry Ford",
+      "email": "hford@gmail.com",
+      "age": 65,
+      "role": "Chairman"
+    },
+    {
+      "name": "Ken Miles",
+      "email": "kmiles@gmail.com",
+      "age": 45,
+      "role": "Driver"
+    },
+    {
+      "name": "Carrol Shelby",
+      "email": "cshelby@gmail.com",
+      "age": 45,
+      "role": "Race Car Builder"
+    }
+    ,
+    {
+      "name": "Lee Laocca",
+      "email": "lloacca@gmail.com",
+      "age": 35,
+      "role": "Marketer"
+    }
+]
